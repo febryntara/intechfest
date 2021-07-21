@@ -380,7 +380,7 @@ nav {
 }
 /* FOOTER END */
 /* ---INDEX PAGE END--- */
-/* ---DAFTAR PAGE START--- */
+/* ---DAFTAR LOGIN LUPA PASS PAGE START--- */
 .daftar {
   width: 100%;
   height: 100vh;
@@ -420,7 +420,7 @@ nav {
   width: 100%;
   border-radius: 10px;
 }
-/* ---DAFTAR PAGE END--- */
+/* ---DAFTAR LOGIN FORGET PASS PAGE END--- */
 @media (max-width: 1100px) {
   /* TIMELINE START */
   .timeline {
@@ -486,7 +486,7 @@ nav {
   /* TIMELINE END */
 }
 @media (max-width: 576px) {
-  /* ---INDEX PAGE STA---RT */
+  /* ---INDEX LOGIN FOR PASS PAGE START--- */
   /* NAV START */
   .nav-menu {
     padding-top: 80px;
@@ -620,7 +620,7 @@ nav {
   }
   /* FOOTER END */
   /* ---INDEX PAGE END--- */
-  /* ---DAFTAR PAGE START--- */
+  /* ---DAFTAR LOGIN FOR PASS PAGE START--- */
   .daftar > img {
     width: 80%;
   }
