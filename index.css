@@ -501,6 +501,108 @@ nav {
   padding: 0px 10px;
 }
 /* ---PENDAFTARAN PAGE END--- */
+/* ---DASHBOARD PAGE START--- */
+.dashboard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  grid-template-columns: 20% 1fr;
+  justify-self: center;
+  transition: 0.2s;
+  background-color: rgb(202, 202, 202);
+}
+.dashboard-menu {
+  padding: 10px;
+  background-color: var(--grey);
+  position: relative;
+  transition: 0.2s;
+  width: 15%;
+}
+.dashboard-menu > span {
+  /* content: "<"; */
+  position: absolute;
+  top: 30px;
+  right: -30px;
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+.dashboard-items > a {
+  color: var(--dark);
+  text-decoration: none;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+.dashboard-items > a:hover {
+  background-color: rgb(97, 96, 96);
+}
+.dashboard-items > a > img {
+  width: 30px;
+  padding: 10px;
+  margin-right: 5px;
+}
+.d-active {
+  background-color: grey;
+}
+.d-active > p {
+  font-weight: 700;
+}
+.d-hidden {
+  display: none;
+}
+.d-size {
+  width: min-content;
+  /* text-align: center; */
+  /* border-radius: 50%; */
+}
+.d-size > .dashboard-items > a {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+  margin: 5px;
+}
+.dashboard-box {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(202, 202, 202);
+}
+.dashboard-content {
+  width: 90%;
+  height: 90%;
+  margin: 2vh auto;
+  margin-top: 8vh;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  position: relative;
+}
+.dashboard-ribbon {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  top: -40px;
+  right: 0;
+  display: grid;
+  grid-template-columns: 30px 30px;
+  gap: 20px;
+  justify-content: center;
+}
+.dashboard-ribbon > * {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+/* ---DASHBOARD PAGE END--- */
 @media (max-width: 1100px) {
   /* TIMELINE START */
   .timeline {
@@ -733,7 +835,6 @@ nav {
   .daftar-box > img {
     width: 80%;
   }
-
   .daftar-box {
     box-sizing: border-box;
     width: 90%;
@@ -741,6 +842,36 @@ nav {
   .daftar-box > form {
     width: 100%;
   }
-
   /* ---PENDAFTARAN PAGE END */
+  /* ---DASHBOARD PAGE START--- */
+  .dashboard-menu {
+    width: 40%;
+    padding: 5px;
+  }
+  .dashboard-logo {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .dashboard-items > a > img {
+    width: 20px;
+    padding: 5px;
+    margin-right: 0;
+  }
+  .dashboard-content {
+    width: 100%;
+  }
+  .d-size {
+    width: 0%;
+    transform: translateX(-100%);
+  }
+  .d-size > .dashboard-items {
+    display: none;
+  }
+  .d-size > .dashboard-items > a {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+  /* ---DASHBOARD PAGE END--- */
 }
