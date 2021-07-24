@@ -423,7 +423,7 @@ nav {
   border-radius: 10px;
   margin-bottom: 10px;
 }
-.auth-box > button {
+.auth-box > input:last-child {
   width: 100%;
   border-radius: 10px;
 }
@@ -447,8 +447,60 @@ nav {
   z-index: 1;
   opacity: 0.6;
 }
-
 /* ---AUTH PAGE END--- */
+/* ---PENDAFTARAN PAGE START--- */
+.daftar {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url(./assets/img/element/elemenP.png);
+  background-size: 400px;
+  display: grid;
+  /* background-repeat: no-repeat; */
+}
+.daftar-box {
+  justify-self: center;
+  align-self: center;
+  background-color: white;
+  padding: 50px;
+  width: 40%;
+  display: grid;
+  border-radius: 30px;
+}
+.daftar-box > img {
+  width: 40%;
+  margin: 10px auto;
+  margin-top: -30px;
+}
+.daftar-box > h1 {
+  width: 80%;
+  justify-self: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.daftar-box > form {
+  width: 80%;
+  justify-self: center;
+  display: grid;
+}
+.daftar-box > form > label + input {
+  display: block;
+  margin-bottom: 5px;
+}
+.daftar-box > form > input {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.daftar-box > form > input:last-child {
+  margin-top: 30px;
+  justify-self: center;
+  width: 80px;
+  padding: 0px 10px;
+}
+/* ---PENDAFTARAN PAGE END--- */
 @media (max-width: 1100px) {
   /* TIMELINE START */
   .timeline {
@@ -662,9 +714,6 @@ nav {
     margin: 0 auto;
     width: 100%;
   }
-  .auth-box > button {
-    /* color: var(--light); */
-  }
   .auth-box > input {
     width: 100%;
   }
@@ -680,4 +729,18 @@ nav {
     z-index: -1;
   }
   /* ---AUTH PAGE END--- */
+  /* ---PENDAFTARAN PAGE START */
+  .daftar-box > img {
+    width: 80%;
+  }
+
+  .daftar-box {
+    box-sizing: border-box;
+    width: 90%;
+  }
+  .daftar-box > form {
+    width: 100%;
+  }
+
+  /* ---PENDAFTARAN PAGE END */
 }
