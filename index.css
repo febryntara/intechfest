@@ -159,6 +159,8 @@ nav {
 }
 .hero-content > p {
   padding: 0 10px;
+  width: 90%;
+  margin: 15px auto;
 }
 /* HERO END */
 /* ABOUT START */
@@ -700,6 +702,9 @@ nav {
   }
   /* NAV END */
   /* ABOUT START */
+  .about {
+    height: auto;
+  }
   .about-box {
     grid-template-columns: 1fr;
   }
@@ -710,6 +715,9 @@ nav {
   /* ABOUT END */
   /* WEBINAR START */
   .webinar {
+    padding: 80px 0;
+    padding-bottom: 60px;
+    height: auto;
     margin-top: 100px;
     grid-template-columns: 1fr;
     text-align: center;
@@ -719,6 +727,7 @@ nav {
     content: "Tentang Webinar";
     font-size: 1.6em;
     font-weight: 550;
+    padding-top: 20px;
     margin-bottom: 10px;
   }
   .webinar-info > h1 {
@@ -729,6 +738,9 @@ nav {
   }
   /* WEBINAR END */
   /* LOMBA START */
+  .lomba {
+    height: auto;
+  }
   .lomba-box {
     grid-template-columns: 1fr;
     row-gap: 20px;
@@ -740,7 +752,14 @@ nav {
   /* TIMELINE START */
   .timeline {
     /* width: 100%; */
-    margin-top: 400px;
+    /* margin-top: 400px; */
+    margin-top: 50px;
+  }
+  .timeline > p {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 40px;
   }
   /* TIMELINE END */
   /* AFFIRMATION START */
