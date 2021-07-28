@@ -31,9 +31,9 @@ a:hover {
   padding: 5px 10px;
   /* line-height: 30px; */
   text-decoration: none;
-  color: var(--dark);
+  color: var(--light);
   transition: 0.2s;
-  background-color: grey;
+  background-color: var(--blue);
   border-radius: 10px;
   box-sizing: unset;
 }
@@ -64,11 +64,12 @@ nav {
   align-items: center;
   padding: 10px;
   box-sizing: border-box;
-  /* background-color: var(--grey); */
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .nav-menu {
   display: grid;
@@ -84,11 +85,13 @@ nav {
   grid-template-columns: repeat(6, max-content);
 }
 .nav-items > a {
+  /* color: var(--light); */
 }
 .nav-items > a:hover {
-  /* NANTI DIISI */
+  color: var(--dark);
 }
 .nav-menu > a {
+  color: var(--light);
 }
 .nav-toggle {
   display: none;
@@ -115,7 +118,7 @@ nav {
   width: 30px;
   height: 5px;
   margin-bottom: 5px;
-  background-color: var(--dark);
+  background-color: var(--blue);
   z-index: 10;
   transition: 0.2s;
 }
@@ -131,7 +134,7 @@ nav {
 /* NAV END */
 /* HERO START */
 .hero {
-  /* margin-top: 80px; */
+  margin-top: 80px;
   width: 100%;
   height: 645px;
   position: relative;
@@ -147,8 +150,13 @@ nav {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: var(--grey);
-  filter: brightness(0.9);
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/BGOnly/Top.png);
+  background-size: 100%;
+  background-position: center;
+  /* background-color: var(--grey); */
+  /* filter: brightness(0.97); */
   z-index: -1;
 }
 .hero-content > h1 {
@@ -158,7 +166,7 @@ nav {
   font-weight: 200;
 }
 .hero-content > p {
-  padding: 0 10px;
+  padding: 0 50px;
   width: 90%;
   margin: 15px auto;
 }
@@ -176,32 +184,32 @@ nav {
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   row-gap: 30px;
 }
 .about-box > p {
   text-align: left;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 .about-image {
   justify-self: center;
-  width: 80%;
-  height: 250px;
-  background-color: var(--grey);
+  width: 50%;
+  /* background-color: var(--grey); */
 }
 /* ABOUT END */
 /* WEBINAR START */
 .webinar {
   width: 100%;
-  height: 450px;
-  padding: 50px 0 20px 0;
+  height: auto;
+  padding: 100px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   box-sizing: unset;
   align-items: start;
   position: relative;
+  box-sizing: border-box;
 }
 .webinar::before {
   content: "";
@@ -211,18 +219,21 @@ nav {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: var(--grey);
-  filter: brightness(0.8);
+  background-image: url(./assets/BGOnly/WebinarIntechfest.png);
+  background-size: cover;
+  /* background-color: var(--grey); */
+  /* filter: brightness(0.96); */
 }
 .webinar-image {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
-  height: 250px;
-  background-color: var(--grey);
+  /* height: 250px; */
+  /* background-color: var(--grey); */
 }
 .webinar-button {
   background-color: transparent;
-  border: 2px solid var(--grey);
+  border: 2px solid var(--blue);
+  color: var(--dark);
 }
 /* WEBINAR END */
 /* LOMBA START */
@@ -239,20 +250,20 @@ nav {
   text-align: center;
 }
 .lomba-content > h2 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .lomba-content > p {
-  padding: 10px 20px;
+  padding: 10px 40px;
 }
 .lomba-image {
-  width: 40%;
+  width: 35%;
   margin: 10px auto;
-  height: 300px;
-  background-color: var(--grey);
+  /* background-color: var(--grey); */
 }
 .lomba-button {
-  background-color: var(--light);
-  border: 2px solid var(--grey);
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  color: var(--dark);
 }
 /* LOMBA END */
 /* TIMELINE START */
@@ -326,14 +337,16 @@ nav {
   height: 350px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-image: url(./assets/BGOnly/Tungguapalagi.png);
+  background-size: cover;
   /* background-color: var(--grey); */
 }
 .affirmation-image {
   position: relative;
   margin: 0 auto;
-  width: 90%;
-  height: 300px;
-  background-color: var(--light);
+  width: 50%;
+  /* height: 300px; */
+  /* background-color: var(--light); */
 }
 .affirmation-content {
   text-align: center;
@@ -371,14 +384,40 @@ nav {
   display: grid;
   grid-template-columns: minmax(130px, 180px) 0.5fr 0.5fr 1fr;
   padding: 30px;
+  background-image: url(./assets/BGOnly/Footer.png);
+  background-size: cover;
   /* background-color: var(--grey); */
 }
 .footer-info {
   list-style: none;
 }
 .footer-button {
-  background-color: var(--light);
-  border: 2px solid grey;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  color: var(--dark);
+}
+.footer-box > div > a {
+  color: var(--dark);
+  margin: 5px 10px;
+  position: relative;
+}
+.footer-box > div > a > span {
+  position: absolute;
+  top: 30px;
+  left: -50px;
+  width: max-content;
+  display: none;
+}
+.footer-box > div > a > i {
+  transition: 0.1s;
+  transform: scale(1.5);
+}
+.footer-box > div > a:hover i {
+  color: var(--dark);
+  transform: scale(2);
+}
+.footer-box > div > a:hover span {
+  display: inherit;
 }
 /* FOOTER END */
 /* ---INDEX PAGE END--- */
@@ -393,31 +432,26 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
+  padding: 30px;
 }
 .auth-content {
   width: 100%;
   padding: 30px 50px;
+  color: var(--dark);
   /* align-self: center; */
 }
 .auth-content > img {
   width: 60%;
   margin-bottom: 80px;
+  color: var(--dark);
 }
 .auth-box {
   width: 60%;
+  color: var(--dark);
   /* background-color: red; */
 }
 .auth-box > * {
   display: block;
-}
-.auth-box > a {
-  margin-top: 50px;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-}
-.auth-box > a:last-child {
-  margin-top: 0;
 }
 .auth-box > input {
   width: 100%;
@@ -425,40 +459,55 @@ nav {
   border-radius: 10px;
   margin-bottom: 10px;
 }
-.auth-box > input:last-child {
+.auth-box > .auth-action {
+  background-color: var(--blue);
+  color: var(--light);
+  border: 2px solid var(--blue);
+}
+.auth-box > a {
+  margin-top: 50px;
   width: 100%;
-  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--dark);
+  display: block;
+}
+.auth-box > a:last-child {
+  margin-top: 0px;
 }
 .auth-bgr {
   width: 100%;
   position: relative;
-  background-image: url(./assets/img/element/elemenP.png);
+  background-image: url(./assets/BGOnly/Login.png);
   background-size: 600px;
-  background-position: right;
+  /* background-position: right; */
 }
-.auth-bgr::after {
+/* .auth-bgr::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 100%;
-  height: 100vh; */
+  width: 100%;
+  height: 100vh;
   right: 0;
   bottom: 0;
   background-color: var(--blue);
   z-index: 1;
   opacity: 0.6;
-}
+} */
 /* ---AUTH PAGE END--- */
 /* ---PENDAFTARAN PAGE START--- */
 .daftar {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   box-sizing: border-box;
   background-image: url(./assets/img/element/elemenP.png);
   background-size: 400px;
   display: grid;
   /* background-repeat: no-repeat; */
+}
+.daftar-primary {
+  height: 100vh;
 }
 .daftar-box {
   justify-self: center;
@@ -476,10 +525,21 @@ nav {
 }
 .daftar-box > h1 {
   width: 80%;
+  font-size: 14pt;
   justify-self: center;
   margin-top: 20px;
   margin-bottom: 10px;
-  text-align: left;
+  text-align: center;
+}
+.daftar-buttons {
+  width: 80%;
+  justify-self: center;
+  display: grid;
+}
+.daftar-buttons > a {
+  display: block;
+  margin: 5px 0;
+  height: auto;
 }
 .daftar-box > form {
   width: 80%;
@@ -587,6 +647,9 @@ nav {
   box-sizing: border-box;
   border-radius: 20px;
   position: relative;
+}
+.dashboard-content > img {
+  width: 30%;
 }
 .dashboard-ribbon {
   position: absolute;
@@ -701,6 +764,17 @@ nav {
     transform: translateY(0);
   }
   /* NAV END */
+  /* HERO START */
+  .hero {
+    margin-top: 50px;
+  }
+  .hero::before {
+    background-image: url(./assets/BGOnly/TopM.png);
+  }
+  .hero-content > p {
+    padding: 0 20px;
+  }
+  /* HERO END */
   /* ABOUT START */
   .about {
     height: auto;
@@ -710,6 +784,7 @@ nav {
   }
   .about-box > p {
     text-align: center;
+    padding: 0 30px;
     order: 2;
   }
   /* ABOUT END */
@@ -718,7 +793,7 @@ nav {
     padding: 80px 0;
     padding-bottom: 60px;
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     grid-template-columns: 1fr;
     text-align: center;
     row-gap: 20px;
@@ -729,6 +804,13 @@ nav {
     font-weight: 550;
     padding-top: 20px;
     margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assets/BGOnly/WebinarIntechfestM.png);
+    background-position-y: -100px;
   }
   .webinar-info > h1 {
     display: none;
@@ -768,6 +850,8 @@ nav {
     height: auto;
     padding: 50px 0;
     padding-top: 60px;
+    background-position-y: -300px;
+    background-image: url(./assets/BGOnly/TungguapalagiM.png);
   }
   .affirmation-content > h1 {
     display: none;
@@ -779,7 +863,7 @@ nav {
     content: "Tunggu Apalagi?";
     width: 100%;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-weight: 550;
     margin-bottom: 10px;
     position: absolute;
@@ -799,16 +883,19 @@ nav {
   /* SPONSORSHIPS END */
   /* FOOTER START */
   .footer {
-    grid-template-areas: "logo logo" " info1 info2" "text text";
+    grid-template-areas: "logo logo" " info1 info1" "info2 info2" "text text";
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
     row-gap: 30px;
+    background-image: url(./assets/BGOnly/FooterM.png);
+    background-position-y: -350px;
+    box-sizing: border-box;
   }
   .footer > img {
     grid-area: logo;
   }
   .footer-info {
-    text-align: center;
+    text-align: left;
   }
   .group-1 {
     grid-area: info1;
@@ -819,13 +906,24 @@ nav {
   .footer-box {
     grid-area: text;
   }
+  .footer-box > div > a {
+    display: block;
+  }
+  .footer-box > div > a > span {
+    display: inline-block;
+    margin-left: 10px;
+    position: static;
+  }
   /* FOOTER END */
   /* ---INDEX PAGE END--- */
   /* ---AUTH PAGE START--- */
   .auth {
     position: relative;
     grid-template-columns: 1fr;
-    color: var(--light);
+    color: var(--dark);
+  }
+  .auth-content {
+    background-color: var(--light);
   }
   .auth-content > img {
     width: 100%;
@@ -839,7 +937,7 @@ nav {
     width: 100%;
   }
   .auth-box > a {
-    color: var(--light);
+    color: var(--dark);
   }
   .auth-bgr {
     position: absolute;
@@ -857,6 +955,11 @@ nav {
   .daftar-box {
     box-sizing: border-box;
     width: 90%;
+  }
+  .daftar-box > h1 {
+    width: 100%;
+    font-size: 11pt;
+    text-align: center;
   }
   .daftar-box > form {
     width: 100%;
@@ -879,6 +982,13 @@ nav {
   }
   .dashboard-content {
     width: 100%;
+  }
+  .dashboard-content > img {
+    width: 80%;
+  }
+  .dashboard-content > .primary-button {
+    font-size: 10pt;
+    height: auto;
   }
   .d-size {
     width: 0%;
