@@ -166,7 +166,7 @@ nav {
   font-weight: 200;
 }
 .hero-content > p {
-  padding: 0 50px;
+  padding: 0 15%;
   width: 90%;
   margin: 15px auto;
 }
@@ -427,12 +427,12 @@ nav {
   height: 100vh;
   /* background-color: var(--grey); */
   /* padding: 30px 0; */
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   padding: 30px;
+  box-sizing: border-box;
 }
 .auth-content {
   width: 100%;
@@ -458,6 +458,11 @@ nav {
   height: 30px;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+.auth-box > input:focus {
+  border-radius: 10px;
+  border: 2px solid var(--dark);
+  outline: unset;
 }
 .auth-box > .auth-action {
   background-color: var(--blue);
