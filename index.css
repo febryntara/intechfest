@@ -624,7 +624,7 @@ nav {
   margin-right: 5px;
 }
 .d-active {
-  background-color: grey;
+  background-color: var(--darkBlue);
 }
 .d-active > p {
   font-weight: 700;
@@ -650,14 +650,14 @@ nav {
   top: 0;
   left: 15%;
   width: 85%;
-  height: 2000px;
+  min-height: 100vh;
   background-color: rgb(202, 202, 202);
   z-index: 1;
   background-image: url(./assets/BGOnly/Login.png);
 }
 .dashboard-content {
   width: 90%;
-  height: 97%;
+  min-height: 90vh;
   margin: 2vh auto;
   margin-top: 8vh;
   margin-bottom: 0;
