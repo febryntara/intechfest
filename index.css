@@ -526,10 +526,11 @@ nav {
 /* ---PENDAFTARAN PAGE START--- */
 .daftar {
   width: 100%;
-  height: 150vh;
+  height: auto;
+  padding: 50px 0;
   box-sizing: border-box;
   background-image: url(./assets/BGOnly/Login.png);
-  background-size: 400px;
+  background-size: 600px;
   display: grid;
   /* background-repeat: no-repeat; */
 }
@@ -540,6 +541,7 @@ nav {
   justify-self: center;
   align-self: center;
   background-color: white;
+  border: 2px solid var(--blue);
   padding: 50px;
   width: 40%;
   display: grid;
@@ -582,6 +584,7 @@ nav {
   border-radius: 10px;
   margin-bottom: 10px;
   padding: 10px 8px;
+  box-sizing: border-box;
   border: 2px solid var(--dark);
 }
 .daftar-box > form > input:focus {
