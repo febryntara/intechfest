@@ -616,7 +616,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 15%;
+  width: 20%;
   height: 100vh;
   padding: 10px;
   background-color: var(--blue);
@@ -683,8 +683,8 @@ nav {
 .dashboard-box {
   position: absolute;
   top: 0;
-  left: 15%;
-  width: 85%;
+  left: 20%;
+  width: 80%;
   min-height: 100vh;
   background-color: rgb(202, 202, 202);
   z-index: 1;
@@ -694,8 +694,7 @@ nav {
   width: 90%;
   min-height: 90vh;
   margin: 2vh auto;
-  margin-top: 8vh;
-  margin-bottom: 0;
+  margin-top: 10px;
   background-color: var(--light);
   padding: 20px;
   box-sizing: border-box;
@@ -707,9 +706,14 @@ nav {
   width: 30%;
 }
 .dashboard-ribbon {
-  position: absolute;
-  top: -40px;
-  right: 10px;
+  /* position: relative; */
+  /* top: 4.5vh; */
+  /* right: 5%; */
+  width: 95%;
+  text-align: right;
+  margin-top: 10px;
+  /* margin-right: 10vh; */
+  z-index: 3;
 }
 .dashboard-ribbon > button {
   background-color: white;
@@ -724,6 +728,39 @@ nav {
   height: 30px;
   font-size: 20px;
   line-height: 30px;
+}
+.dashboard-user {
+  background-color: var(--light);
+  list-style: none;
+  text-align: right;
+  position: absolute;
+  top: 55px;
+  right: 5%;
+  padding: 10px 5px;
+  border: 2px solid var(--blue);
+  display: none;
+  border-radius: 10px;
+  transform: translateY(-120%);
+  z-index: 3;
+}
+.dashboard-user > li > input {
+  transition: 0.2s;
+}
+.dashboard-user > li:hover input {
+  background-color: var(--blue);
+  color: var(--light);
+}
+.dashboard-user > li > input {
+  background-color: unset;
+  border: unset;
+  text-align: right;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 5px;
+}
+.d-restore {
+  display: block;
+  transform: translateY(0);
 }
 /* ---DASHBOARD PAGE END--- */
 /* ---DETAIL LOMBA PAGE START--- */
@@ -1111,6 +1148,9 @@ nav {
     width: 30px;
     height: 30px;
     padding: 5px;
+  }
+  .dashboard-user {
+    right: 0;
   }
   /* ---DASHBOARD PAGE END--- */
   /* ---DETAIL LOMBA PAGE START--- */
