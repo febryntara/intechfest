@@ -29,16 +29,23 @@ a:hover {
   line-height: 30px;
   text-align: center;
   padding: 5px 10px;
-  /* line-height: 30px; */
   text-decoration: none;
   color: var(--light);
   transition: 0.2s;
   background-color: var(--blue);
   border-radius: 10px;
   box-sizing: unset;
+  display: inline-block;
+}
+.primary-button:hover {
+  color: var(--light);
+  transform: scale(1.05);
 }
 .primary-button:active {
   transform: scale(0.8);
+}
+.secondary-button:hover {
+  color: var(--dark);
 }
 .primary-link {
   text-align: center;
