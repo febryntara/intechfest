@@ -628,7 +628,7 @@ nav {
   /* content: "<"; */
   position: absolute;
   top: 30px;
-  right: -30px;
+  right: -32px;
   width: 30px;
   height: 30px;
   background-color: var(--blue);
@@ -637,6 +637,8 @@ nav {
   cursor: pointer;
   display: none;
   color: var(--light);
+  border: 2px solid white;
+  border-left: none;
 }
 .dashboard-items > a {
   color: var(--light);
