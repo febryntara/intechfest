@@ -214,6 +214,7 @@ nav {
 .about-box > p {
   text-align: left;
   padding: 0 50px;
+  padding-left: 100px;
 }
 .about-image {
   justify-self: center;
@@ -246,6 +247,9 @@ nav {
   background-size: cover;
   /* background-color: var(--grey); */
   /* filter: brightness(0.96); */
+}
+.webinar-info > p {
+  padding-right: 100px;
 }
 .webinar-image {
   width: 50%;
@@ -485,7 +489,7 @@ nav {
   grid-area: info2;
 }
 .footer-box {
-  grid-area: text;
+  grid-area: info2;
 }
 .footer-info {
   list-style: none;
@@ -1090,7 +1094,7 @@ nav {
     row-gap: 20px;
   }
   .webinar::before {
-    content: "Tentang Webinar";
+    content: "Tentang ChillTalks";
     font-size: 1.6em;
     font-weight: 550;
     padding-top: 20px;
