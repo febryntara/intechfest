@@ -466,11 +466,26 @@ nav {
 .footer {
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(130px, 180px) 0.5fr 0.5fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr 1fr;
+  grid-template-areas: "logo other other" "info1 info2 text";
   padding: 30px;
   background-image: url(./assets/BGOnly/Footer.png);
   background-size: cover;
+  row-gap: 30px;
+  column-gap: 150px;
   /* background-color: var(--grey); */
+}
+.footer > img {
+  grid-area: logo;
+}
+.group-1 {
+  grid-area: info1;
+}
+.group-2 {
+  grid-area: info2;
+}
+.footer-box {
+  grid-area: text;
 }
 .footer-info {
   list-style: none;
