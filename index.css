@@ -212,7 +212,7 @@ nav {
   row-gap: 30px;
 }
 .about-box > p {
-  text-align: left;
+  text-align: justify;
   padding: 0 50px;
   padding-left: 100px;
 }
@@ -250,6 +250,7 @@ nav {
 }
 .webinar-info > p {
   padding-right: 100px;
+  text-align: justify;
 }
 .webinar-image {
   width: 50%;
@@ -1114,6 +1115,7 @@ nav {
   }
   .webinar-info > p {
     padding: 0 20px;
+    text-align: center;
   }
   /* WEBINAR END */
   /* LOMBA START */
