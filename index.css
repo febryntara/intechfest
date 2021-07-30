@@ -7,6 +7,9 @@
   --grey: #d8e3e7;
   --light: #ffffff;
 }
+html {
+  scroll-behavior: smooth !important;
+}
 * {
   padding: 0;
   margin: 0;
@@ -36,6 +39,8 @@ a:hover {
   border-radius: 10px;
   box-sizing: unset;
   display: inline-block;
+  margin: 5px;
+  border: unset;
 }
 .primary-button:hover {
   color: var(--light);
@@ -65,7 +70,7 @@ a:hover {
 nav {
   display: grid;
   width: 100%;
-  height: 80px;
+  height: 70px;
   box-sizing: border-box;
   grid-template-columns: 50px 1fr;
   align-items: center;
@@ -391,6 +396,7 @@ nav {
   align-items: center;
   padding: 1rem 0;
   color: var(--dark);
+  scroll-margin-top: 10rem;
 }
 .faq-accordion-link > ion-icon {
   color: var(--dark);
@@ -717,6 +723,10 @@ nav {
   padding: 10px;
   margin-right: 5px;
 }
+.dashboard-items > a > ion-icon {
+  padding: 10px;
+  margin-right: 5px;
+}
 .d-active {
   background-color: var(--darkBlue);
 }
@@ -820,6 +830,73 @@ nav {
 .d-restore {
   display: block;
   transform: translateY(0);
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--blue);
+}
+.table tr:first-child {
+  font-weight: 600;
+}
+.table tr {
+  border-bottom: 2px solid var(--blue);
+}
+.table tr td {
+  padding: 5px;
+}
+.table tr td button {
+  border: unset;
+  padding: 5px;
+  color: white;
+  background-color: var(--blue);
+  cursor: pointer;
+  margin: 5px;
+}
+.table tr td:last-child button {
+  background-color: red;
+}
+.table2 tr td:last-child button:first-child {
+  background-color: var(--blue);
+}
+.dash-input * {
+  display: block;
+}
+.dash-input > form > label + input {
+  display: block;
+  margin-bottom: 5px;
+}
+.dash-input > form > input {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  border: 2px solid var(--dark);
+}
+.dash-input > form > input:last-child {
+  width: max-content;
+  box-sizing: unset;
+  padding: 5px 10px;
+  border: unset;
+  margin-left: 0;
+  margin-top: 10px;
+}
+.dash-input > form > input:focus {
+  outline: unset;
+  border: 2px solid var(--dark);
+}
+.dash-input > form > textarea {
+  width: 100%;
+  height: 50px;
+  border: 2px solid var(--dark);
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.dash-input > form > textarea:focus {
+  outline: unset;
+  font-family: "Poppins", sans-serif;
 }
 /* ---DASHBOARD PAGE END--- */
 /* ---DETAIL LOMBA PAGE START--- */
@@ -1197,10 +1274,6 @@ nav {
   .dashboard-content > img {
     width: 80%;
   }
-  .dashboard-content > .primary-button {
-    font-size: 10pt;
-    height: auto;
-  }
   .d-size {
     width: 0%;
     transform: translateX(-100%);
@@ -1215,6 +1288,60 @@ nav {
   }
   .dashboard-user {
     right: 0;
+  }
+  .table {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .table tr:first-child {
+    display: none;
+  }
+  .table tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .table tr td {
+    display: block;
+    width: 100%;
+  }
+  .table tr td:first-child::before {
+    content: "No";
+    display: block;
+    font-weight: 600;
+  }
+  .table tr td:nth-child(2)::before {
+    content: "Nama Peserta";
+    display: block;
+    font-weight: 600;
+  }
+  .table tr td:nth-child(3)::before {
+    content: "No HP";
+    display: block;
+    font-weight: 600;
+  }
+  .table tr td:nth-child(4)::before {
+    content: "Lomba yang Diikuti";
+    display: block;
+    font-weight: 600;
+  }
+  .table tr td:nth-child(5)::before {
+    content: "Data";
+    display: block;
+    font-weight: 600;
+  }
+  .table tr td:last-child::before {
+    content: "Action";
+    display: block;
+    font-weight: 600;
+  }
+  .table2 tr td:nth-child(2)::before {
+    content: "Kategori Lomba";
+  }
+  .table2 tr td:nth-child(3)::before {
+    content: "Deskripsi";
+  }
+  .table2 tr td:last-child::before {
+    content: "Action";
   }
   /* ---DASHBOARD PAGE END--- */
   /* ---DETAIL LOMBA PAGE START--- */

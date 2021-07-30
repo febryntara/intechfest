@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/favicon/favicon-32x32.png" sizes="32x32" />
-    <title>Dashboard</title>
+    <title>Dashboard : Admin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -40,18 +40,18 @@
                 </li>
             </ul> -->
             <div class="dashboard-items">
-                <a href="" class="d-active">
-                    <img src="../assets/logo/WDC/Logo Ligth Mode.png" alt="icon">
-                    <p>PNBWDC</p>
+                <a href="./dashadmin.html">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <p>Peserta</p>
                 </a>
-                <a href="">
-                    <img src="../assets/logo/DC/Logo Light Mode.png" alt="icon">
-                    <p>PNBDC</p>
+                <a href="./dashadmin2.html" class="d-active">
+                    <ion-icon name="trophy-outline"></ion-icon>
+                    <p>Kategori Lomba</p>
                 </a>
-                <a href="">
+                <!-- <a href="">
                     <img src="../assets/logo/INTECH FEST.png" alt="icon">
                     <p>ChillTalks</p>
-                </a>
+                </a> -->
                 <!-- <a href="./menu4.html">
                     <img src="../assets/img/logo/INTECH FEST.png" alt="icon">
                     <p>Menu 4</p>
@@ -73,15 +73,24 @@
                 </ul>
             </div>
             <div class="dashboard-content">
-                <img src="../assets/logo/WDC/Logo Type Signature Color.png" alt="">
-                <a href="../pendaftaran/pnbwdcTinggi.html" class="primary-button">Daftar PNBWDC Tingkat Perguruan
-                    Tinggi</a>
-                <a href="../pendaftaran/pnbwdcTinggi.html" class="primary-button">Daftar PNBWDC Tingkat
-                    Sma/Smk/Sederajat</a><br>
+                <div action="" class="dash-input">
+                    <h1>Tambah Kategori Baru</h1>
+                    <form action="">
+                        <label for="namaKategori">Nama Kategori Lomba</label>
+                        <input type="text" name="namaKategori" id="namaKategori">
+                        <label for="deskripsiKategori">Deskripsi</label>
+                        <textarea name="deskripsiKategori" id="deskripsiKategori"></textarea>
+                        <input type="submit" value="Tambah" class="primary-button">
+                    </form>
+                    <a href="./dashadmin2.html" class="primary-link"
+                        style="text-align: left; display: inline;">Kembali</a>
+                </div>
             </div>
         </div>
     </section>
     <script src="./dashScript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
