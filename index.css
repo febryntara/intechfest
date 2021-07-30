@@ -470,8 +470,8 @@ nav {
 .footer {
   width: 100%;
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 1fr;
-  grid-template-areas: "logo other other" "info1 info2 text";
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-areas: "logo other" "info1 info2";
   padding: 30px;
   background-image: url(./assets/BGOnly/Footer.png);
   background-size: cover;
@@ -485,11 +485,13 @@ nav {
 .group-1 {
   grid-area: info1;
 }
-.group-2 {
-  grid-area: info2;
-}
+/* .group-2 {
+  grid-area: logo;
+} */
 .footer-box {
+  width: 100%;
   grid-area: info2;
+  /* background-color: red; */
 }
 .footer-info {
   list-style: none;
@@ -507,7 +509,7 @@ nav {
 .footer-box > div > a > span {
   position: absolute;
   top: 30px;
-  left: -50px;
+  left: -50%;
   width: max-content;
   display: none;
 }
@@ -520,7 +522,7 @@ nav {
   transform: scale(2);
 }
 .footer-box > div > a:hover span {
-  display: inherit;
+  display: block;
 }
 /* FOOTER END */
 /* ---INDEX PAGE END--- */
@@ -1208,11 +1210,13 @@ nav {
   }
   .footer-box > div > a {
     display: block;
+    /* width: 100%; */
   }
   .footer-box > div > a > span {
     display: inline-block;
     margin-left: 10px;
     position: static;
+    /* width: 100%; */
   }
   /* FOOTER END */
   /* ---INDEX PAGE END--- */
